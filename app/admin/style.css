@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  position: relative;
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh !important;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+
+.wrapper{
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+.wrapper .title{
+  height: 76px;
+  color: #18181b;
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 30px 26px 26px 26px;
+}
+
+.wrapper form .row{
+  height: 46px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.wrapper form .row input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .row input:focus {
+  border-bottom: 1px solid hsl(240, 4%, 26%);
+}
+
+
+form .row input::placeholder{
+  color: #27272a;
+}
+
+
+.wrapper form .row i{
+  position: absolute;
+  width: 46px;
+  height: 100%;
+  color: #3b82f6;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+
+.wrapper form .button input{
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background-color: #3b82f6;
+  color: #fff;
+  margin-top: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+.error {
+  color: rgb(239 68 68);
+}
